@@ -1,0 +1,21 @@
+<div class="row justify-content-center">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title class="header">User Information</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div>
+      <div> First Name: {{ userData.first_name}}</div>
+      <div> Last Name: {{ userData.last_name}}</div>
+      <div> Email: {{ userData.email}}</div>
+    </div>
+    </mat-card-content>
+
+  </mat-card>
+</div>
+<br>
+
+<div class="row justify-content-center">
+  <app-books [user_id]="userData._id"></app-books>
+</div>
